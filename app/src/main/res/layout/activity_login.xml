@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E1F0FA"
+    tools:context=".LoginActivity">
+
+
+    <EditText
+        android:id="@+id/edt_pw"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="8dp"
+        android:background="#FFFFFF"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="  비밀번호"
+        android:inputType="textPassword"
+        android:textColor="#000000"
+        android:textColorHint="#777777"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.515"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edt_id" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.523"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView9"
+        app:srcCompat="@drawable/mark" />
+
+    <EditText
+        android:id="@+id/edt_id"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="284dp"
+        android:background="#FFFFFF"
+        android:ellipsize="middle"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="아이디"
+        android:inputType="textPersonName"
+        android:textColorHint="#777777"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.515"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="246dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="36dp"
+        android:background="#E496AA"
+        android:text="로그인"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:backgroundTint="#E496AA"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edt_pw" />
+
+    <Button
+        android:id="@+id/btn_join"
+        android:layout_width="246dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="4dp"
+        android:background="#E496AA"
+        android:text="회원가입"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:backgroundTint="#E496AA"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.509"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_login" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="아이디 / 비밀번호 찾기"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_join" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="332dp"
+        android:layout_height="213dp"
+        android:layout_marginTop="16dp"
+        android:background="#E1F0FA"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/colorchildbgremoved1" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
